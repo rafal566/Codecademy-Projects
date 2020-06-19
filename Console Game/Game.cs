@@ -52,7 +52,7 @@ namespace ConsoleGame {
   public new static int KeepInBounds(int coordinate, int max_value) {
     if(coordinate < 0) {
       return 0;
-    } else if (coordinate > max_value) {
+    } else if (coordinate >= max_value) {
       return max_value - 1;
     } else {
       return coordinate;
