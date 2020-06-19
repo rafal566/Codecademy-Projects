@@ -56,7 +56,7 @@ def card_choice (bet_money):
   if bet_money > money:
     print("Your balance excedes bet!")
     return 0
-  cards = list(range(1, 12))*4
+  cards = list(range(1, 14))*4
   player_card = cards[random.randint(0, len(cards)-1)]
   print('Player card is: ' + str(player_card))
   cards.remove(player_card)
